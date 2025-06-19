@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+			list-style-type: none;
+			background-color: #333;
+			color: ghostwhite;
+			justify-content: center;
+			text-align: center;
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+			
+		}
+		li a{
+
+
+			text-decoration: none;
+			float: left;
+			display: inline-block;
+			background-color: #333;
+			color: ghostwhite;
+			padding: 12px;
+			display: block;
+			align-items: center;
+
+		}
+		li a:hover{
+			background-color: aliceblue;
+			color:blue;
+		}
+        input[type=button]
+		{
+			background-color: orangered;
+			color: white;
+			float: right;
+			
+			
+		}
+        
+       #selection
+       {
+        width: 300px;
+       }
+       #f
+       {
+        background-color: orangered;
+        color: white;
+        height: 50px;
+        width: 100px;
+        text-align: center;
+        align-items: center;
+        position:absolute;
+        top:720px;
+       }
+       table
+       {
+        border: 2px solid black;
+        height:500px;
+        position: absolute;
+        left:500px;
+        top:200px;
+       }
+       #h
+       {
+        height: 5px;
+        background-color: black;
+       }
+       
+    </style>
+</head>
+<body bgcolor="lavender">
+    <header>
+        <nav>
+        <ul>
+            <li><a href='home of restorent.html'>HOME</a></li>
+            <li><a href='about2.html'>ABOUT</a></li>
+            <li><a href='mainu.html'>MENU</a></li>
+            <li><a href='contact us.html'>CONTACT US</a></li>
+            <li><a href='image.html'>GALLERY</a></li>
+            <li><a href='tablebookingform.html'><input type="button" value="click for table booking"></a></li>
+        </ul>
+        </nav>
+        </header>
+    <h1>Restorent Reservation Form Template</h1>
+    <hr id="h">
+    <table>
+        <section>
+            <tr>
+        <td>name</td>
+        <td><input type="text">
+        <input type="text"></td>
+    </section>
+        </tr>
+        <tr>
+        <section>
+        <td><lable>Email</lable></td>
+       <td><input type="text"></td>
+        </section>
+        </tr>
+        <tr>
+        <section>
+            <td><label>Phone</label></td>
+            <td><input type="number" placeholder="(xxx-xxx-xxx)"></td>
+            </section>
+            </tr>
+            <tr>
+            <section>
+                <td><label>Number of guests</label></td>
+                <td><input type="number"></td>
+            </section>
+            </tr>
+            <tr>
+            <section>
+                <td><lable>Date and Time</lable></td>
+                <td><input type="datetime-local"></td>
+            </section>
+            </tr>
+            <tr>
+            <section>
+                <td><label>Would you like to reserve a table</label></td>
+                
+                <td><select id="selection">
+                    <option>yes</option>
+                    <option>no</option>
+                </select></td>
+            </section>
+            </tr>
+            <tr>
+            <section>
+                <td><label>Would you like to reserve a private room</label></td>
+               
+                <td><select id="selection">
+                    <option>yes</option>
+                    <option>no</option>
+                </select></td>
+            </section>
+            </tr>
+            <tr>
+            <section>
+                <td><label>reservation type</label></td>
+               
+                <td><select>
+                    <option>private room</option>
+                    <option>want to book sheet in a common room</option>
+                </select></td>
+            </section></tr>
+            <tr>
+            <section>
+                <td><label>special request</label></td>
+               <td><textarea cols="50" rows="15" placeholder="you can tell us if you have some special request from our restorent"></textarea></td>
+            </section>
+            </tr>
+            
+        </table>
+        <center><input type="button" value="submit"  id='f' onclick="msg()"></center>
+        
+</body>
+<script>
+    function msg()
+    {
+        document.write("<b>"+"Thanks for given us a chance to serve we do our best "+"</b>"+"<br><br>"+"your sheet reservation request is send to the restorent we can send a mail after checking your decided sheet or room is availabel or not");
+    }
+</script>
+</html>
